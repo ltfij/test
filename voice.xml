@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
+    <Say>
+        Hello, we were unable to reach the original number. We are now calling the fallback number.
+    </Say>
+    <Dial>{{ $fallbackNumber }}</Dial>
     <Say voice="alice">Visitor {{ $name }} has registered on the kiosk to gain access to unit {{ $unit }}.</Say>
     <Pause length="2" />
     <Gather action="{{ $approveHref }}"  method="GET" input="dtmf" numDigits="1">
