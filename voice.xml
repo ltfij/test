@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Say voice="alice">Visitor has registered on the kiosk to gain access to unit {{ $unit }}.</Say>
+    <Say voice="alice">Visitor has registered on the kiosk to gain access to unit.</Say>
     <Pause length="2" />
     <Gather action=""  method="GET" input="dtmf" numDigits="1">
         <Pause length="2" />
