@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Response>
     <Say voice="alice">Visitor has registered on the kiosk to gain access to unit.</Say>
     <Pause length="2" />
