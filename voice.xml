@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="alice">Visitor {{ $name }} has registered on the kiosk to gain access to unit {{ $unit }}.</Say>
+    <Pause length="2" />
+    <Gather action="{{ $approveHref }}"  method="GET" input="dtmf" numDigits="1">
+        <Pause length="2" />
+        <Say voice="alice">If you want to approve this visitor, please press 1</Say>
+    </Gather>
+    <Gather action="{{ $rejectHref }}" method="GET" input="dtmf" numDigits="2">
+        <Pause length="2" />
+        <Say voice="alice">If you want to reject this visitor, please press 2</Say>
+    </Gather>
+    <Pause length="7" />
+    <Say voice="alice">I'm sorry, there was no input given</Say>
+</Response>
